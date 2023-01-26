@@ -10,7 +10,7 @@ public class DiscountService {
 
 
 
-    private double calculateStandardDiscount(double price) {
+    private double calculateStandardDiscount(double price) {  //bazowa znizka
         if (price > 1000) {
             return applyDiscount(price, 0.1) ;
         } else {
@@ -18,7 +18,7 @@ public class DiscountService {
         }
     }
 
-    private double calculatePremiumDiscount(double price) {
+    private double calculatePremiumDiscount(double price) {  //dodatkowa znizka
         if (price > 1000) {
             return applyDiscount(price, 0.15);
         } else {
